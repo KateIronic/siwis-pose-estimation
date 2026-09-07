@@ -1,0 +1,77 @@
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Environments
+venv/
+.venv/
+env/
+ENV/
+.python-version
+
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------------------
+# Raw captures (camera + CSI) -- regenerate by re-running capture/
+# ---------------------------------------------------------------------------
+*.pcap
+*.pcapng
+*.mkv
+*.mp4
+*.avi
+data/raw_frames/
+*_meta.json
+
+# ---------------------------------------------------------------------------
+# Derived datasets -- rebuild with data/build_labels.py
+# ---------------------------------------------------------------------------
+data/labels_*/
+*.npy
+*.npz
+
+# ---------------------------------------------------------------------------
+# Model weights (trained checkpoints + pretrained HRNet backbone)
+# ---------------------------------------------------------------------------
+checkpoints/*
+*.pt
+*.pth
+*.ckpt
+*.onnx
+# keep the mmpose model config, it is source not weights
+!checkpoints/*.py
+
+# ---------------------------------------------------------------------------
+# Run outputs: logs, visualizations, deck renders
+# ---------------------------------------------------------------------------
+*.log
+runs/
+logs/
+outputs/
+wandb/
+tensorboard/
+predictions_viz/
+deck_preview/
+
+# ---------------------------------------------------------------------------
+# OS / editor cruft
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~

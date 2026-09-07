@@ -1,0 +1,12 @@
+torch>=2.0
+torchvision>=0.15
+csiread
+scikit-learn
+opencv-python
+numpy
+scipy
+Pillow
+mmpose>=1.0
+mmcv>=2.0
+mmdet>=3.0
+mmengine
